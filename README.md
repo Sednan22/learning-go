@@ -1,3 +1,5 @@
 # Learning Go by Jon Bodner
 
-## - Theory && Exercises
+## Theory and Exercises
+
+- Chapter 1 - done 09.12.2026
