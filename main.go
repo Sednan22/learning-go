@@ -2,38 +2,24 @@ package main
 
 import (
 	"fmt"
+	"strings"
+	"time"
 )
 
-const value = 20
-
 func main() {
+	fmt.Println(strings.Repeat("-", 50))
+	fmt.Println("Code starting...")
+	var now = time.Now()
 
-	var i int = 20
-	var f float64 = float64(i)
-	fmt.Println(i)
-	fmt.Println(f)
+	x := []int{1, 2, 3, 4, 5, 6, 7, 8}
+	y := make([]int, 3)
 
-	i = value
-	f = value
-	fmt.Println(i)
-	fmt.Println(f)
+	fmt.Println(x)
+	fmt.Println(y)
 
-	var b byte = 255
-	var smallI int32 = 2147483647
-	var bigI uint64 = 18446744073709551615
+	copy(y, x)
+	fmt.Println(y)
 
-	b += 1
-	smallI += 1
-	bigI += 1
-
-	fmt.Println(b)
-	fmt.Println(smallI)
-	fmt.Println(bigI)
-
-	testKeyboard("Testing keyboard...")
-
-}
-
-func testKeyboard(test string) {
-	fmt.Println(test)
+	fmt.Println("Code finished...", time.Since(now))
+	fmt.Println(strings.Repeat("-", 50))
 }

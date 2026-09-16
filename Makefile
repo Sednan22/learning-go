@@ -15,5 +15,7 @@ build: vet
 run:
 	@./$(BINARY_FILE)
 
+all: build run
+	
 clean:
 	go clean
