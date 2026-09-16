@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 const value = 20
 
@@ -27,4 +29,11 @@ func main() {
 	fmt.Println(b)
 	fmt.Println(smallI)
 	fmt.Println(bigI)
+
+	testKeyboard("Testing keyboard...")
+
+}
+
+func testKeyboard(test string) {
+	fmt.Println(test)
 }
