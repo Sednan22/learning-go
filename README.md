@@ -4,3 +4,5 @@
 
 - Chapter 1 - done 09.12.2026
 - Chapter 2 - done 09.14.2026
+- Chapter 3 - done 09.17.2026
+- Chapter 4 - reading...

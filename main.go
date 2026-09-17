@@ -10,16 +10,33 @@ func main() {
 	fmt.Println(strings.Repeat("-", 50))
 	fmt.Println("Code starting...")
 	var now = time.Now()
+	/*--------------------------------------------*/
 
-	x := []int{1, 2, 3, 4, 5, 6, 7, 8}
-	y := make([]int, 3)
+	type Employee struct {
+		firstName string
+		lastName  string
+		id        int
+	}
 
-	fmt.Println(x)
-	fmt.Println(y)
+	var john = Employee{}
 
-	copy(y, x)
-	fmt.Println(y)
+	raq := Employee{
+		"raq",
+		"test",
+		235543543,
+	}
 
+	gus := Employee{
+		firstName: "Gus",
+		lastName:  "test",
+		id:        13543,
+	}
+
+	fmt.Println(john)
+	fmt.Println(raq)
+	fmt.Println(gus)
+
+	/*--------------------------------------------*/
 	fmt.Println("Code finished...", time.Since(now))
 	fmt.Println(strings.Repeat("-", 50))
 }
